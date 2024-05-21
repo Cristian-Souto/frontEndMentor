@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Purple: hsl(259, 100%, 65%);
+  --LighteRed: hsl(0, 100%, 67%);
+  --White: hsl(0, 0%, 100%);
+  --OffWhite: hsl(0, 0%, 94%);
+  --LightGrey: hsl(0, 0%, 86%);
+  --SmokeyGrey: hsl(0, 1%, 44%);
+  --OffBlack: hsl(0, 0%, 8%);
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background-color: var(--OffWhite);
+}
+
+.container {
+  width: 520px;
+  height: auto;
+  padding: 2rem;
+  border-radius: 20px 20px 100px;
+  border: 1px solid white;
+  background-color: var(--White);
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  justify-content: space-between;
+}
+
+input {
+  border: 1px solid var(--LightGrey);
+  border-radius: 4px;
+  width: 114px;
+  height: 45px;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 1rem;
+  margin-right: 14px;
+  transition: all 0.4s ease;
+}
+
+input:hover {
+  border: 1px solid var(--Purple);
+  transition: all 0.4s ease;
+}
+
+.text-label {
+  color: var(--SmokeyGrey);
+  font-size: 0.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
+
+.error-invalid-input {
+  color: var(--LighteRed);
+  
+}
+
+.error-invalid {
+  color: var(--LighteRed);
+  font-size: 0.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: none;
+  /* ocultar inicialmente */
+}
+
+.underline {
+  border-bottom: 1px solid var(--LightGrey);
+  margin-top: 35px;
+  position: relative;
+}
+
+.btn-calculator {
+  width: 60px;
+  height: 60px;
+  background-color: var(--Purple);
+  border: none;
+  border-radius: 1000px;
+  position: absolute;
+  left: 400px;
+  top: -28px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.btn-calculator:hover {
+  background-color: var(--OffBlack);
+  transition: all 0.4s ease;
+}
+
+.icon {
+  width: 30px;
+}
+
+.text-output {
+  color: var(--Purple);
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+p {
+  font-size: 4em;
+  color: var(--OffBlack);
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+.output {
+  padding: 1rem 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
